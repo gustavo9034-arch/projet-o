@@ -61,7 +61,10 @@ h1 em, h2 em { color: #d6bd91; font-style: normal; }
 .timeline-item b { font-family: var(--font-heading); color: var(--green); }
 .timeline-item span { color: var(--muted); }
 .oil-section { display: grid; grid-template-columns: 1fr 1fr; background: var(--deep); color: #fff; }
-.oil-image { min-height: 610px; background: url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1200&q=85") center/cover no-repeat; }
+.oil-image {
+  min-height: 610px;
+  background: url("petroleo2.jpg") center / cover no-repeat;
+}
 .oil-copy { padding: 85px clamp(32px, 7vw, 100px); align-self: center; }
 .light-label { color: #d6bd91; }
 .oil-copy h2 { font-size: clamp(38px, 4.5vw, 56px); }
