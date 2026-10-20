@@ -188,7 +188,13 @@ h1 em, h2 em { color: #d6bd91; font-style: normal; }
   .intro h2, .section-heading h2, .green-copy h2, .oil-copy h2 { font-size: 37px; }
   .timeline-item { grid-template-columns: 65px 1fr; }
   .oil-section, .green-section { grid-template-columns: 1fr; }
-  .oil-image { min-height: 300px; background-position: center 42%; }
+  .oil-image {
+    min-height: 300px;
+    background-image: url("petroleo2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   .oil-copy, .green-copy { padding: 58px 7%; }
   .oil-facts div { grid-template-columns: 100px 1fr; }
   .section-heading { display: block; margin-bottom: 30px; }
