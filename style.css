@@ -77,7 +77,23 @@ h1 em, h2 em { color: #d6bd91; font-style: normal; }
 .island-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .island-card { background: var(--paper); }
 .card-photo { height: 300px; background-size: cover; background-position: center; }
-.palm-card .card-photo { background-image: url("https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1000&q=85"); }
+/* PROJETO 01 — Palm Jumeirah */
+.palm-card .card-photo {
+    background-image: url("palm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 320px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 768px) {
+    .palm-card .card-photo {
+        min-height: 240px;
+        background-position: center;
+    }
+}
 .world-card .card-photo { background-image: url("the-world-dubai.png"); }
 .card-body { padding: 28px 30px 30px; }
 .card-index { font-size: 9px; color: #8b734c; font-weight: 700; letter-spacing: .16em; }
