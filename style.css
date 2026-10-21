@@ -515,3 +515,127 @@ h1 em, h2 em { color: #d6bd91; font-style: normal; }
     animation: none;
   }
 }
+
+
+/* Correção do rodapé no computador */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 30px;
+  padding: 28px 6.5%;
+}
+
+.site-footer > .site-title,
+.site-footer > p,
+.site-footer > .back-top {
+  flex-shrink: 0;
+}
+
+.site-footer > p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.site-footer .back-top {
+  white-space: nowrap;
+}
+
+/* A seção dos integrantes ocupa uma linha inteira */
+.team-details {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  margin-top: 12px;
+}
+
+.team-details summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 24px 0;
+  font-size: 15px;
+}
+
+.team-count {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.team-panel {
+  width: 100%;
+  padding: 28px 0 40px;
+}
+
+.team-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 36px;
+  row-gap: 0;
+}
+
+.team-list li {
+  overflow-wrap: break-word;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 26px 5%;
+    gap: 18px 24px;
+  }
+
+  .team-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 680px) {
+  .site-footer {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px 7%;
+  }
+
+  .site-footer > p {
+    flex: 0 0 100%;
+    order: 3;
+    text-align: left;
+  }
+
+  .team-details {
+    margin-top: 12px;
+  }
+
+  .team-details summary {
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 17px 0;
+    font-size: 12px;
+  }
+
+  .team-count {
+    display: none;
+  }
+
+  .team-panel {
+    padding: 15px 0 28px;
+  }
+
+  .team-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-list li {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+}
